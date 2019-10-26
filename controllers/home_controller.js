@@ -1,0 +1,21 @@
+var express = require('express');
+var bodyParser = require('body-parser');
+var ejs = require('ejs');
+
+var path = require('path');
+var HomeRoutes = express.Router();
+
+var correct_path = path.join(__dirname+'/../views/home/');
+HomeRoutes.get('/',function(req,res){
+    let email = req.session.email;
+    res.render('home/index',{email: email});
+});
+HomeRoutes.get('/logout',(req,res) => {
+    req.session.destroy((err) => {
+        if(err) {
+            return console.log(err);
+        }
+        res.redirect('/');
+    });
+});
+module.exports = {"HomeRoutes" : HomeRoutes};

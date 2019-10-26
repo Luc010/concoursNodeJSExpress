@@ -1,0 +1,10 @@
+<% include ../inc/header.ejs %>
+<form method="POST" action="/login">
+    <h2>Log in </h2>
+    <input name="email" type="text" class="form-control" placeholder="Email Address" autofocus="true" />
+    <input name="password" type="password" class="form-control" placeholder="Password" />
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+    Don't have an account? <a href='/register'>Signup</a>
+    </div>
+</form>
+<% include ../inc/footer.ejs %>

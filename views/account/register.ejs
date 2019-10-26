@@ -1,0 +1,32 @@
+<% include ../inc/header.ejs %>
+<div class="row d-flex flex-wrap">
+    <div class="col-12">
+        <h1>Enregistrement</h1>
+        <small class="p-5">
+            Pour créer un compte rien de plus simple,
+            il te suffit d'insérer correctement tes informations dans ce formulaire ci-dessous.
+        </small>
+        <div class="col-sm-12 col-md-6 ">
+            <div class="jumbotron">
+                <form class="login-form" method="POST" action="/register">
+                    <span class="danger"><%=errors%></span>
+                    <label>Adresse</label>
+                    <input name="address" type="text" class="form-control" placeholder="Veuillez insérer votre adresse" autofocus="true" required />
+                    <label>Identifiant</label>
+                    <input name="username" type="text" class="form-control" placeholder="v" autofocus="true"
+                        required />
+                    <label>Email</label>
+                    <input name="email" type="text" class="form-control" placeholder="Email" autofocus="true"
+                        required />
+                    <label>Mot de passe</label>
+                    <input name="password" type="password" class="form-control" placeholder="Mot de passe" required />
+                    <label>Confirmation</label>
+                    <input name="passwordConfirm" type="password" class="form-control" placeholder="Confirmez votre mot de passe"
+                        required />
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">S'inscire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../inc/footer.ejs %>
