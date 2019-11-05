@@ -8,8 +8,8 @@
         </small>
         <div class="col-sm-12 col-md-6 ">
             <div class="jumbotron">
+                <span class="text-danger text-center"><%=errors%></span>
                 <form class="login-form" method="POST" action="/register">
-                    <span class="danger"><%=errors%></span>
                     <label>Adresse</label>
                     <input name="address" type="text" class="form-control" placeholder="Veuillez insérer votre adresse" autofocus="true" required />
                     <label>Identifiant</label>
@@ -23,7 +23,7 @@
                     <label>Confirmation</label>
                     <input name="passwordConfirm" type="password" class="form-control" placeholder="Confirmez votre mot de passe"
                         required />
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">S'inscire</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">S'inscrire</button>
                 </form>
             </div>
         </div>
