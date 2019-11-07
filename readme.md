@@ -13,7 +13,7 @@
 ``` sequelize init ```
 
 ### 5. Model's creation:
-``` sequelize model:generate --name User --attributes firstname:string,lastname:string,age:number,level:string,address:string,street:string,city:string,socialNetwork:string,username:string,email:string,password:string ```
+``` sequelize model:generate --name User --attributes firstname:string,lastname:string,age:integer,level:string,address:string,city:string,country:string,zip:string,social_num:integer,social_network:string,username:string,email:string,password:string ```
 
 ### 6. Database's creation:
 ``` sequelize db:create ```
